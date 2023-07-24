@@ -15,7 +15,6 @@
                     <i class='bx bx-plus' ></i>
                     <span class="text">Tambah baru</span>
                 </a>
-
                 <div class="dropdown">
                     <a href="#" class="category-link" style="text-align: center">Filter Kategori <i class='bx bx-chevron-down' style="padding-left: 5px"></i></a>
                     <div class="dropdown-content">
@@ -26,6 +25,10 @@
                     </div>
                 </div>
             </div>
+            <a href="{{route('book.export')}}" class="btn-download">
+                <i class='bx bxs-cloud-download'></i>
+                <span class="text">Download Excel</span>
+            </a>
         </div>
         <div class="table-data">
             <div class="order">

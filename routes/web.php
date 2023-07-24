@@ -79,6 +79,7 @@ Route::middleware('auth')->group(function(){
     Route::delete('/book/{id}', [BookController::class, 'destroy'])->name('book.destroy');
     Route::get('/book/download/{id}',[BookController::class, 'download'])->name('book.download');
     Route::get('/book/{id}', [BookController::class, 'show'])->name('book.show');
+    Route::get('/book-export', [BookController::class, 'export'])->name('book.export');
 
     //user edit
     Route::get('/user/profile/{id}', [UserController::class, 'editprofile'])->name('profile.edit');
